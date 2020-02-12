@@ -1,0 +1,9 @@
+Https : https://github.com/jmn0223/PYWEB.git
+
+create:
+echo "# PYWEB" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/jmn0223/PYWEB.git
+git push -u origin master

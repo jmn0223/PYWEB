@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <script>
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://jmn0223.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+    <style>
+        h1{
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+            color: black;
+            font-size:60px;
+        }
+        span{
+            font-family: 'Pacifico', cursive;
+            color: red;
+            font-size:20px;
+        }
+        img{
+            margin-left:360px;
+        }
+        p{
+            margin-left:30px;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>{{ object.title }}</h1>
+<div>
+    <p><span>Description</span>: {{ object.description }}</p>
+    <p><span>Create Date</span>: {{ object.create_date }}</p>
+    <p><span>Modify Date</span>: {{ object.modify_date }}</p>
+    <img src="{{ object.image.url }}" width="600" height="600">
+    <div id="disqus_thread"></div>
+
+
+</div>
+
+</body>
+</html>
